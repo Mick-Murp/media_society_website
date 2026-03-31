@@ -1,7 +1,7 @@
 name: Build & Publish Docker Image
 
 env:
-  REGISTRY: https://github.com/Mick-Murp
+  REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
 on:
@@ -34,7 +34,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.REGISTRY_SECRET }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract metadata for Docker
         id: meta
