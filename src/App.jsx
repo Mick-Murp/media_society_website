@@ -113,7 +113,7 @@ function App() {
         </section>
         <section id="about" className="about rounded-lg" style={{ borderRadius: '1rem' }}>
           <div className="about-container">
-            <h2>About Us TEST TEST TEST TEST</h2>
+            <h2>About Us</h2>
             <p>
               TU Dublin Media Society has one mission; to give students on TU
               Dublin’s Tallaght Campus a space to be creative.
